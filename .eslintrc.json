@@ -1,0 +1,46 @@
+{
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  
+  "extends": "airbnb",
+
+  "rules": {
+    "semi": [
+      2,
+      "always"
+    ],
+    "no-unexpected-multiline": 2,
+    "react/prop-types": 0,
+    "no-underscore-dangle": 0,
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    ],
+    "no-confusing-arrow": 1,
+    "linebreak-style": [
+      0,
+      "windows"
+    ],
+    "no-unused-vars": [1, {"argsIgnorePattern": "res|next|^err"}],
+    "arrow-body-style": [2, "as-needed"],
+    "no-param-reassign": [2, { "props": false }],
+    "no-console": 1,
+    "max-len": 1
+  },
+
+  "settings": {
+    "polyfills": [
+      "fetch"
+    ],
+    "flowtype": {
+      "onlyFilesWithFlowAnnotation": true
+    }
+  }
+}
